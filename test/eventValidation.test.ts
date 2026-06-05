@@ -1,4 +1,4 @@
-import { createEventSchema } from "../../src/api/v1/validation/eventValidation";
+import { createEventSchema } from "../src/api/v1/validation/eventValidation";
 
 describe("createEventSchema", () => {
   it('should fail when "name" is missing', () => {

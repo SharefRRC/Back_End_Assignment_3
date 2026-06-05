@@ -1,13 +1,13 @@
-import * as repository from "../../src/api/v1/repositories/eventRepository";
+import * as repository from "../src/api/v1/repositories/eventRepository";
 import {
   createEvent,
   deleteEvent,
   getAllEvents,
   getEventById,
   updateEvent
-} from "../../src/api/v1/services/eventService";
+} from "../src/api/v1/services/eventService";
 
-jest.mock("../../src/api/v1/repositories/eventRepository");
+jest.mock("../src/api/v1/repositories/eventRepository");
 
 describe("eventService", () => {
   it("should create an event using repository", async () => {
